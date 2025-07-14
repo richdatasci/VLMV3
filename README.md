@@ -38,3 +38,22 @@ sudo systemctl start ollama
 ```bash
 ollama --version
 ```
+
+# Download VLM models
+```bash
+ollama pull granite3.2-vision:latest  # IBM's specialized vision model
+ollama pull llava:latest             # General purpose vision model
+```
+
+# Clone this repository (if applicable)
+```bash
+git clone https://github.com/yourusername/VLMV3.git
+cd VLMV3
+
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install Python dependencies
+pip install ollama Pillow argparse
+```
